@@ -1,17 +1,11 @@
-import { ModeToggle } from "@/components/ModeToggle";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import HomeContent from "@/components/home/HomeContent";
+import Navbar from "@/components/home/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center py-10 gap-10">
-      <ModeToggle />
-      <h1 className="text-2xl font-bold">Home</h1>
-      <Link href='/private'>
-        <Button variant='default'>
-          Private Page
-        </Button>
-      </Link>
+    <main className="w-full">
+      <Navbar />
+      <HomeContent />
     </main>
   );
 }
